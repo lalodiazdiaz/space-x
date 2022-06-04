@@ -1,38 +1,86 @@
 .App {
+  font-family: sans-serif;
+}
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  max-width: 300px;
+  margin: 1rem 0rem;
+  background-color: #efefef;
+}
+.mission-card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.mission-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: chocolate;
+  margin: 0px;
+}
+
+.mission-card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.mission-number {
+  background: gray;
+  width: 2rem;
+  color: white;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 10px;
+  min-width: 2rem;
+}
+.mission-date {
+  font-size: 0.825rem;
+  color: lightslategrey;
+  margin-bottom: 1rem;
+}
+.mission-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.header {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  color: white;
+  justify-content: center;
+  display: flex;
+}
+
+.date-input {
+  display: block;
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.date-input label {
+  color: rgb(47, 47, 47);
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.date-input > input {
+  padding: 0.5rem 0.25rem;
+  border-radius: 3px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filters {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  margin-top: 0.5rem;
 }
